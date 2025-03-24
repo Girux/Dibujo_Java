@@ -1,0 +1,23 @@
+class Figura 
+    - String tipo
+    - int x1, y1, x2, y2
+    
+    + Figura(String tipo, int x1, int y1, int x2, int y2)
+
+
+class Lista 
+    - LinkedList<Figura> lista
+
+    + Lista()
+    + LinkedList<Figura> obtenerLista()
+    + void agregar(Figura elemento)
+    + void eliminar(Figura elemento)
+    + void eliminarTrazos(int x, int y)
+    + boolean guardar(String nombreArchivo)
+    + void desdeArchivo(String nombreArchivo)
+
+
+class Archivo 
+    + static String elegirArchivo()
+    + static BufferedReader abrirArchivo(String nombreArchivo)
+    + static boolean guardarArchivo(String nombreArchivo, String[] lineas)
